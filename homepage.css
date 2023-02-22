@@ -1,0 +1,233 @@
+*{padding: 0; margin: 0; box-sizing: border-box; scroll-behavior: smooth;}
+
+/* HOMEPAGE + HIDDEN MENU */
+#homepage{
+    height: 100vh;
+    width: 100vw;
+    background-color: #FEF200;
+    position: absolute;
+}
+#oldmarvel{
+  height: 70px;
+  width: 90px;
+  margin: 12px;
+  cursor: pointer;
+  transition: transform .7s ease-in-out;
+}
+#oldmarvel:hover{
+  transform: rotate(360deg);
+}
+#main_nav{
+  z-index: 3;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background:#ed1d24;
+  text-align: center;
+}
+#menu{
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+  color: #FEF200;
+  font-weight: bold;
+  font-size: 80px;
+  font-family: Helvetica, sans-serif;
+}
+li{
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.with_nav #main_nav {
+  display: block;
+}
+#main_nav:target{
+  display: block;
+}
+.hidden_menu {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 0;
+  padding: 16px;
+  overflow: hidden;
+  transition: all 0.5s smooth;
+  /* background: white 10px 10px / 20px 20px no-repeat; */
+}
+#close_box {
+  height: 100px;
+  width: 100px;
+  margin: 4px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scale-in-center {
+	-webkit-animation: scale-in-center 15s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 15s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#titlesite{
+  font-family: Captain America;
+  color: #ed1d24;
+  font-size: 184px;
+  text-align: center;
+}
+
+#links{
+    height: 14%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    left: 380px;
+}
+.jello-vertical:hover {
+	-webkit-animation: jello-vertical 0.9s both;
+	        animation: jello-vertical 0.9s both;
+}
+
+
+/* ANIMATION 1 ANIMASTA = zoom in  */
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+/* ANIMATION 2 ANIMASTA = jello vertical effect */
+ @-webkit-keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  
+/* MEDIA QUERIES - taille des écrans */
+@media screen and (max-width:767px){
+  #main_nav{
+      background-color: #FEF200;
+  }
+  #homepage{
+      background-color: #0B0002;
+  }
+  li{
+      margin-top: 28px;
+      margin-bottom: 28px;
+  }
+  #titlesite{
+    font-size: 100px;
+    color: #FEF200;
+  }
+  .hidden_menu{
+      padding-top: 4px;
+      padding-right: 2px;
+      border: none;
+  }
+  a{
+      font-size: 44px;
+      color: #ed1d24;
+  }
+  #links{
+    height: 14%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    left: 50px;
+  }
+}
