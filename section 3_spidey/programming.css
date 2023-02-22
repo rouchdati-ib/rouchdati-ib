@@ -168,5 +168,12 @@ li{
         background-image: url("space-pixel-art.gif");
     }
     .liens{font-size: 58px;}
-
+    #navigation{
+        display: none;
+    }
+    #players{
+        margin-top: 20px;
+        height: 200vh;
+        flex-direction: column;
+    }
 }
