@@ -69,8 +69,8 @@ li{
     position: absolute;
     top: 0;
     left: 0;
-    height: 400px;
-    width: 600px;
+    height: 100vh;
+    width: 100vw;
     background:darkred;
 }
 #menu{
@@ -85,8 +85,12 @@ li{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 80px;
     font-family: Helvetica, sans-serif;
+}
+.menulink:hover{
+    color: whitesmoke;
+    background-color: black;
 }
 .list{
     list-style-type: none;
@@ -142,7 +146,7 @@ li{
     pointer-events: auto;
 }
 .modal-window > div {
-    height: 280px;
+    height: 260px;
     width: 380px;
     position: absolute;
     top: 50%;
@@ -175,17 +179,41 @@ li{
     border-radius: 8px;
 }
 .modal-window div:not(:last-of-type) {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
+#user{
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#photoprofil{
+    height: 40px;
+    padding: 2px;
+}
+#usertag{
+    padding: 2px;
+}
 #actions{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 .actions{
-    height: 14px;
-    width: 14px;
+    height: 16px;
+    width: 16px;
+}
+
+/* Scrollzone inside tweet */
+#study {
+    height: 100px;
+    padding-left: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    scrollbar-color: red black;
+    scrollbar-width: thin;
 }
 
 /* PROFILE TWITTER */
