@@ -104,7 +104,7 @@ hr{
 .liens{
     text-decoration: none;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 80px;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px black;
 }
@@ -147,7 +147,6 @@ li{
 }
 #crosslogo{
     cursor: pointer;
-    height: 100px;
     width: 100px;
     transition: transform .7s ease-in-out;
 }
@@ -196,6 +195,9 @@ li{
         width: 80px;
         margin-top: 6px;
         margin-right: 6px;}
+    #crosslogo{
+            height: 80px;
+            width: 80px;}
     #tvalogo{
         height: 70px;
         width: 70px;

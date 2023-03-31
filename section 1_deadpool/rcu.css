@@ -90,12 +90,11 @@ li{
 }
 .menulink:hover{
     color: whitesmoke;
-    background-color: black;
 }
 .list{
     list-style-type: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .with_nav #main_nav {
@@ -118,8 +117,10 @@ li{
 }
 #close_box {
     height: 100px;
-    width: 54px;
-    margin-right: 10px;
+    width: 100px;
+    margin-top: 8px;
+    margin-right: 8px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -402,6 +403,14 @@ h5{
 
 /* MEDIA QUERIES */
 @media screen and (max-width:767px){
+    /* HIDDEN MENU */
+    #main_nav{
+    background:darkred;
+    }
+    .menulink{
+    font-size: 66px;
+    }
+
     #bluezone{
         height: 100vh;
         width: 100vw;
