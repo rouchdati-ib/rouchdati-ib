@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+    </style>
+    <title>THE RCU</title>
+    <link rel="stylesheet" href="rcu.css">
+</head>
+<body>
+    
+<main id="bluezone">
+
+    <div id="zone1">
+        <div id="iconszone">
+            <ul id="iconslist">
+                <li>
+                    <img id="mainlogo" src="deadpool logo.png" alt="deadpool logo">
+                </li>
+                <li>
+                    <a class="links" id="menucache" href="#main_nav">
+                        <img class="icons" src="home.png" alt="twitter home logo">
+                    </a>
+                </li>
+                <li>
+                    <a class="links" href="#me" onclick="togglePopup()">
+                        <img class="icons" src="utilisateur.png" alt="profile logo">
+                    </a>
+                </li>
+                <li>
+                    <a class="links" href="#studies">
+                        <img class="icons" src="graduation-hat.png" alt="studies logo">
+                    </a>
+                </li>
+                <li>
+                    <a class="links" href="#skills">
+                        <img class="icons" src="skills.png" alt="skills logo">
+                    </a>
+                </li>
+                <li>
+                    <a class="links" href="#hobbies">
+                        <img class="icons" src="hobbies.png" alt="hobbies logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="main_nav">
+            <ul id="menu">
+                <li class="list"><a href="/homepage.html" target="_self" class="menulink">HOME</a></li>
+                <hr style="width: 98%; color: red;">
+                <li class="list"><a href="/section 2_loki/digital.html" target="_blank" class="menulink">DIGITAL</a></li>
+                <hr style="width: 98%; color: red;">
+                <li class="list"><a href="/section 3_spidey/programming.html" target="_blank" class="menulink">PROGRAMMING</a></li>
+                <hr style="width: 98%; color: red;">
+                <li class="list"><a href="/section 4_wandavision/contact.html" target="_blank" class="menulink">CONTACT</a></li>
+            </ul>
+
+            <p id="close">
+                <a href="#body" id="close_box" class="hidden_menu">
+                    <img src="fermer.png" alt="close comic bull icon">
+                </a>
+            </p>
+        </div>
+
+        <div id="me" class="modal-window">
+            <div id="insidetweet">
+                <a href="#" title="Close" class="modal-close"><img src="fermer.png" alt="fermer icon" style="width: 16px; margin-left: 30px;"></a>
+              
+                <div id="user">
+                    <div id="photoprofil">
+                        <img id="profilpic" src="deadpool wow.gif" alt="" style="width: 50px;height: 50px; border-radius: 50%; border:2px solid black;">
+                    </div>
+                    <div id="usertag" style="display: flex;flex-direction: column; align-items: start;">
+                        <h3 style="font-size: large;">Deadpool</h3>
+                        <p style="font-size:small; color: black;">@dead_x_alive</p>
+                    </div>
+                </div>
+
+                <div>
+                <p style="margin-bottom: 8px;">Je m'appelle Rouchdati Ibrahim. J'étudie la communication digitale au CNAM Paris. Mon projet professionnel est de soit travailler dans le branding, le community management ou la gestion de projet digital.  
+                </p></div>
+
+                <hr style="color:rgb(255, 0, 0,0.2);">
+
+                <p style="margin-top: 6px; font-size: smaller;margin-bottom: 6px;"><span style="font-weight: bold; margin-right: 4px;">28</span>Retweets<span style="font-weight: bold; margin-right: 4px; margin-left: 6px;">202</span>Likes</p>
+
+                <hr style="color:rgb(255, 0, 0,0.2);">
+
+                <div id="actions" style="margin-top: 8px;">
+                <img class="actions" src="reply.png" alt="answer logo">
+                <img class="actions" src="retweet.png" alt="retweet logo">
+                <img class="actions" src="heart.png" alt="like logo">
+                <img class="actions" src="bookmark.png" alt="bookmark logo">
+                </div>
+            </div>
+        </div>
+
+        <div id="studies" class="modal-window">
+            <div id="insidetweet">
+                <a href="#" title="Close" class="modal-close"><img src="fermer.png" alt="fermer icon" style="width: 16px; margin-left: 30px;"></a>
+              
+                <div id="user">
+                    <div id="photoprofil">
+                        <img id="profilpic" src="deadpool wow.gif" alt="" style="width: 50px;height: 50px; border-radius: 50%; border:2px solid black;">
+                    </div>
+                    <div id="usertag" style="display: flex;flex-direction: column; align-items: start;">
+                        <h3 style="font-size: large;">Deadpool</h3>
+                        <p style="font-size:small; color: black;">@dead_x_alive</p>
+                    </div>
+                </div>
+
+                <div id="study" style="margin-bottom: 8px;">
+                    <ul id="mystudies">
+                        <li class="studieslist" style="font-weight: bold;">💻 BAC+1 Spécialité Communication Digitale - CNAM Paris</li>
+                        <p style="font-size: small;">2023 - aujourd'hui</p>
+                        <li class="studieslist" style="font-weight: bold;">💻 Passe Numérique - CNAM Paris</li>
+                        <p style="font-size: small;">2022</p>
+                        <li class="studieslist" style="font-weight: bold;">🇬🇧 Licence LLCER Anglais - Sorbonne-Nouvelle</li>
+                        <p style="font-size: small;">2018 - 2021</p>
+                        <li class="studieslist" style="font-weight: bold;">🌍 Licence Géographie - La Sorbonne</li>
+                        <p style="font-size: small;">2013 - 2018</p>
+                        <li class="studieslist" style="font-weight: bold;">🎓 Baccalauréat Sciences et Technologique de Gestion Spécialité Ressources Humaines - Lycée Racine</li>
+                        <p style="font-size: small;">2013</p>
+                    </ul> 
+                </div>
+
+                <hr style="color:rgb(255, 0, 0,0.2);">
+
+                <p style="margin-top: 6px; font-size: smaller;margin-bottom: 6px;"><span style="font-weight: bold; margin-right: 4px;">2</span>Retweets<span style="font-weight: bold; margin-right: 4px; margin-left: 6px;">43</span>Likes</p>
+
+                <hr style="color:rgb(255, 0, 0,0.2);">
+
+                <div id="actions" style="margin-top: 8px;">
+                <img class="actions" src="reply.png" alt="answer logo">
+                <img class="actions" src="retweet.png" alt="retweet logo">
+                <img class="actions" src="heart.png" alt="like logo">
+                <img class="actions" src="bookmark.png" alt="bookmark logo">
+                </div>
+            </div>
+        </div>
+
+        <div id="skills" class="modal-window">
+            <div id="insidetweet">
+                <a href="#" title="Close" class="modal-close"><img src="fermer.png" alt="fermer icon" style="width: 16px; margin-left: 30px;"></a>
+              
+                <div id="user">
+                    <div id="photoprofil">
+                        <img id="profilpic" src="deadpool wow.gif" alt="" style="width: 50px;height: 50px; border-radius: 50%; border:2px solid black;">
+                    </div>
+                    <div id="usertag" style="display: flex;flex-direction: column; align-items: start;">
+                        <h3 style="font-size: large;">Deadpool</h3>
+                        <p style="font-size:small; color: black;">@dead_x_alive</p>
+                    </div>
+                </div>
+
+                <div id="study" style="margin-bottom: 8px;">
+                    <ul id="mystudies">
+                        <li class="studieslist" style="font-weight: bold; color: red;">HARD SKILLS</li>
+                        <p style="font-size: small;">Logiciels/Outils numériques : Figma, Canva, Google Suite (Docs, Slides, Forms, Meet), Pack Office : Word, PowerPoint </p>
+                        <p style="font-size: small;">Langues : Français (langue maternelle) et Anglais (B2-C1) </p>
+                        <p style="font-size: small;">Langages de programmation : HTML et CSS </p>
+                        <li class="studieslist" style="font-weight: bold; color: red;">SOFT SKILLS</li>
+                        <p style="font-size: small;">Créativité</p>
+                        <p style="font-size: small;">Esprit d'équipe</p>
+                        <p style="font-size: small;">Prise recul</p>
+                        <p style="font-size: small;">Sens de l'organisation</p>
+                        <p style="font-size: small;">Curiosité</p>
+                        <p style="font-size: small;">Ouverture d'esrit</p>
+                        <p style="font-size: small;">Ecoute active</p>
+                        <p style="font-size: small;">Esprit critique</p>
+                        <p style="font-size: small;">Communication orale et écrite</p>
+                        <p style="font-size: small;">Sens de l'organisation</p>
+                    </ul> 
+                </div>
+
+                <hr style="color:rgb(255, 0, 0,0.2);">
+
+                <p style="margin-top: 6px; font-size: smaller;margin-bottom: 6px;"><span style="font-weight: bold; margin-right: 4px;">10</span>Retweets<span style="font-weight: bold; margin-right: 4px; margin-left: 6px;">62</span>Likes</p>
+
+                <hr style="color:rgb(255, 0, 0,0.2);">
+
+                <div id="actions" style="margin-top: 8px;">
+                <img class="actions" src="reply.png" alt="answer logo">
+                <img class="actions" src="retweet.png" alt="retweet logo">
+                <img class="actions" src="heart.png" alt="like logo">
+                <img class="actions" src="bookmark.png" alt="bookmark logo">
+                </div>
+            </div>
+        </div>
+
+        <div id="hobbies" class="modal-window">
+            <div id="insidetweet">
+                <a href="#" title="Close" class="modal-close"><img src="fermer.png" alt="fermer icon" style="width: 16px; margin-left: 30px;"></a>
+              
+                <div id="user">
+                    <div id="photoprofil">
+                        <img id="profilpic" src="deadpool wow.gif" alt="" style="width: 50px;height: 50px; border-radius: 50%; border:2px solid black;">
+                    </div>
+                    <div id="usertag" style="display: flex;flex-direction: column; align-items: start;">
+                        <h3 style="font-size: large;">Deadpool</h3>
+                        <p style="font-size:small; color: black;">@dead_x_alive</p>
+                    </div>
+                </div>
+
+                <div id="study" style="margin-bottom: 8px;">
+                    <ul id="mystudies">
+                        <li class="studieslist" style="font-size: medium;">Culture télévisuelle internationales (séries et émissions de divertissements)</li>
+                        <li class="studieslist" style=" font-size: medium;">Ecriture de fictions Young Adult en français et en anglais</li>
+                        <li class="studieslist" style="font-size: medium;">Photographie amateur</li>
+                        <li class="studieslist" style="font-size: medium;">Musique (tous les genres, surtout de la K-POP; veille des dernières news)</li>
+                    </ul> 
+                </div>
+
+                <hr style="color:rgb(255, 0, 0,0.2);">
+
+                <p style="margin-top: 6px; font-size: smaller;margin-bottom: 6px;"><span style="font-weight: bold; margin-right: 4px;">12</span>Retweets<span style="font-weight: bold; margin-right: 4px; margin-left: 6px;">52</span>Likes</p>
+
+                <hr style="color:rgb(255, 0, 0,0.2);">
+
+                <div id="actions" style="margin-top: 8px;">
+                <img class="actions" src="reply.png" alt="answer logo">
+                <img class="actions" src="retweet.png" alt="retweet logo">
+                <img class="actions" src="heart.png" alt="like logo">
+                <img class="actions" src="bookmark.png" alt="bookmark logo">
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <div id="zone2">
+        <div id="namezone">
+            <div id="arrowout">
+                <img id="arrow" src="arrow left.png" alt="arrow left direction">
+            </div>
+            <div id="nameaccount">
+                <h2 id="compte">Deadpool</h2>
+                <h4 id="nbtweets">3639 tweets</h4>
+            </div>
+        </div>
+
+        <div id="header">
+            <img id="profileheader" src="parental.jpg" alt="parental advisory explicit sign">
+        </div>
+        <div id="biozone">
+            <div id="identity">
+                <div id="photodeprofil">
+                    <img id="profilepic" src="deadpool wow.gif" alt="" style="width: 140px;height: 140px;">
+                </div>
+                <div id="cotedroit">
+                    <img src="more.png" alt="more parameters" style="width:30px;">
+                    <button id="suivre">Follow</button>
+                </div>
+            </div>
+            <div id="utilisateur">
+                <h3 style="font-size: x-large;">Deadpool</h3>
+                <p style="font-size:medium; color: black;">@dead_x_alive</p>
+                <p style="font-size:medium; margin-top: 10px;margin-bottom: 10px; font-weight: bold;">X-FORCE</p>
+            </div>
+            <div id="localisation">
+                <img src="location.png" alt="location logo" style="height:16px;width:16px;">
+                <p style="padding-left: 4px; font-family: Helvetica, sans-serif; font-size: medium;">dr.x school for kids</p>
+            </div>
+            <div id="abonne">
+                <p style="font-family: Helvetica, sans-serif;color: black;"><span style="margin-right: 6px;font-weight: bold; color: whitesmoke;">1</span>abonnement</p>
+                <p style="margin-left: 18px; font-family: Helvetica, sans-serif;color: black;"><span style="margin-right: 6px;font-weight: bold;color: whitesmoke;">467,9 K</span>abonnés</p>
+            </div>
+        </div>
+        
+        <div id="fil">
+            <div class="point">Tweets</div>
+            <div class="point">Tweets & Answers</div>
+            <div class="point">Medias</div>
+            <div class="point">Likes</div>
+        </div>
+        <div id="tweet">
+            <h1 style="font-family: Helvetica, sans-serif; font-weight: bolder;">Welcome to the RCU</h1>
+            <h5 style="font-family: Helvetica, sans-serif; font-weight: bolder;">(The R.C.U. aka The Rouchdati Cinematic Universe)</h5>
+        </div>
+    </div>
+
+    <div id="zone3">
+        <div id="search">
+            <input type="search" name="Search" id="rechercher" placeholder="Search">
+        </div>
+        <div id="trends">
+            <div id="france">
+                <h2>Tendances : France</h2>
+            </div>
+            <div class="tendances">
+                <h5>1 · Tendances</h5>
+                <h4>Anti-Heroes</h4>
+                <h5>632 k Tweets</h5>
+            </div>
+            <div class="tendances">
+                <h5>2 · Tendances</h5>
+                <h4>Scott Lang</h4>
+                <h5>402 k Tweets</h5>
+            </div>
+            <div class="tendances">
+                <h5>3 · Tendances</h5>
+                <h4>Teen Avengers</h4>
+                <h5>200 k Tweets</h5>
+            </div>
+            <div class="tendances">
+                <h5>4 · Tendances</h5>
+                <h4>Captain America</h4>
+                <h5>330 k Tweets</h5>
+            </div>
+            <div class="tendances">
+                <h5>5 · Tendances</h5>
+                <h4>Beyonce</h4>
+                <h5>110 k Tweets</h5>
+            </div>
+            <div class="tendances">
+                <h5>6 · Tendances</h5>
+                <h4>Atlantis is real</h4>
+                <h5>256 k Tweets</h5>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
